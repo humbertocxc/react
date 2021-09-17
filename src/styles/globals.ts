@@ -12,7 +12,9 @@ export const GlobalStyle = createGlobalStyle`
     --text-body: #969cb3;
 
     --shape: #ffffff;
-    --backround: #f0f2e5;
+    --background: #f0f2e5;
+
+    --button-border: #d7d7d7;
   }
 
   * {
@@ -32,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--backround);
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -70,7 +72,7 @@ export const GlobalStyle = createGlobalStyle`
   .react-modal-content {
     width: 100%;
     max-width: 576px;
-    background: var(--backround);
+    background: var(--background);
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;

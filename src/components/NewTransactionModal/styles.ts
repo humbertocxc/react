@@ -13,7 +13,7 @@ export const Container = styled.form`
     height: 4rem;
     border-radius: 0.25rem;
 
-    border: 1px solid #d7d7d7;
+    border: 1px solid var(--button-border);
     background: #e7e9ee;
 
     font-weight: normal;
@@ -52,6 +52,44 @@ export const Container = styled.form`
 
     &:hover {
       filter: brightness(0.9);
+    }
+  }
+`;
+
+export const TransactionTypeContainer = styled.div`
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  button {
+    height: 4rem;
+    border: 1px solid var(--button-border);
+    border-radius: 0.25rem;
+
+    background: var(--background);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      border: 0;
+      filter: brightness(0.95);
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 1rem;
+      font-size: 1rem;
+      color: var(--text-title);
     }
   }
 `;
