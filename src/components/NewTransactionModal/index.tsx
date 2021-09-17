@@ -4,7 +4,6 @@ import incomeImg from '../../assets/entradas.svg'
 import outcomeImg from '../../assets/saidas.svg'
 import { Container, RadioBox, TransactionTypeContainer } from './styles';
 import { FormEvent, useContext, useState } from 'react';
-import { api } from '../../services/api';
 import { TransactionsContext } from '../../TransactionsContext';
 
 
