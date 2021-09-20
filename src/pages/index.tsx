@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import styles from './home.module.scss';
+import { SubscribeButton } from '../components/SubscribeButton';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
             Tenha acesso a todas as publicacoes <br />
             <span>por R$9,90 por mês.</span>
           </p>
+          <SubscribeButton />
         </section>
         <img src="/images/avatar.svg" alt="Girl coding" />
       </main>
