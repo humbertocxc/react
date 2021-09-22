@@ -15,7 +15,6 @@
     "faunadb": "^4.4.1",
     "next": "11.1.2",
     "next-auth": "^4.0.0-beta.2",
-    "next-slicezone": "^0.1.2",
     "prismic-dom": "^2.2.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
