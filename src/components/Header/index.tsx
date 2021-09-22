@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { SignInButton } from '../SignInButton';
 import styles from './styles.module.scss';
-import Link from 'next/link';
+import { ActiveLink } from '../ActiveLink/index';
+
 
 export function Header() {
   return (
@@ -9,12 +10,12 @@ export function Header() {
       <div className={styles.headerContent}>
         <img src="/images/logo.svg" alt="ig.news" />
         <nav>
-          <Link href="/">
-            <a className={styles.active}>Home</a>
-          </Link>
-          <Link href="/posts/">
-            <a >Posts</a>
-          </Link>
+          <ActiveLink activeClassName={styles.active} href="/">
+            <a>Home</a>
+          </ActiveLink>
+          <ActiveLink activeClassName={styles.active} href="/posts">
+            <a>Posts</a>
+          </ActiveLink>
         </nav>
         <SignInButton />
       </div>
